@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600');
+
+html, body {
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: linear-gradient(#B388EB, #8093F1, #00B2CA);
+    background: #4A5759;
+    overflow: hidden;
+}
+
+iframe {
+    z-index: 0;
+}
+
+/* ##### SELECT ##### */
+
+select {
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    right: 16%;
+    height: 50px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #8cdfeb, #bcc7ff);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 8px;
+    padding: 10px;
+}
+
+option {
+    color: black!important;
+}
+
+/* ##### BUTTON ##### */
+
+.container {
+    font-weight: bold;
+    z-index: 98;
+    display:flex;
+    filter:url('#goo');
+    position: absolute;
+    bottom: 5px;
+    right: 1%;
+    cursor: pointer;
+}
+
+#button {
+    z-index: 99;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    background: linear-gradient(45deg, #8cdfeb, #bcc7ff);
+    border-radius: 20px;
+    color: #FFF;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+.social, i, a {
+    opacity: 0;
+    position: relative;
+    border-radius: 100%;
+    display: inline-block;
+    color: #FFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+.social {
+    margin 5px;
+}
+
+i {
+    z-index: 99999;
+    cursor: pointer;
+    width: 51px;
+    height: 45px;
+}
+
+a {
+    color: #FFF;
+}
+
+.twitter {
+    background-color: #00aced!important;
+}
+
+.facebook {
+    background-color: #269831!important;;
+}
+
+.google {
+    background-color: #c60100 !important;;
+}
+
+.youtube {
+    background-color: #269831!important;;
+}
+
+.clicked {
+    opacity: 1;
+    transition: 1.2s all ease;
+    transform: translateY(-56px);
+}
+
+.down {
+    opacity: 0;
+    transition: 1.2s all ease;
+    transform: translateY(0px);
+}
+
